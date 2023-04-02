@@ -5,7 +5,7 @@
 
 import importlib
 import os
-
+import torch
 
 # automatically import any Python files in the models/ directory
 models_dir = os.path.dirname(__file__)
