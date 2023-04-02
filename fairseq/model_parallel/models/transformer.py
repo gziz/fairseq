@@ -118,4 +118,5 @@ class ModelParallelTransformerDecoder(TransformerDecoder):
 
         if getattr(self.args, "criterion") != "vocab_parallel_cross_entropy":
             x = gather_from_model_parallel_region(x).contiguous()
-        return x
+        
+        return x * 2
